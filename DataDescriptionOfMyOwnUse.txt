@@ -1,0 +1,123 @@
+SK_ID_CURR：ID of loan in our sample贷款编号
+TARGET：目标变量（1存在违约风险，表示付款困难、他/她在前Y笔付款中，至少有X天逾期还款超过X天；0-不存在违约风险）
+NAME_CONTRACT_TYPE：贷款类型：贷款是现金 or 循环贷款（Cash loans/Revolving loans）
+CODE_GENDER：客户性别（F/M）
+FLAG_OWN_CAR：客户是否拥有汽车（Y/N）
+FLAG_OWN_REALTY：客户是否拥有房屋或公寓（Y/N）
+CNT_CHILDREN：客户拥有孩子的数量
+AMT_INCOME_TOTAL：客户收入
+AMT_CREDIT：贷款信用额
+AMT_ANNUITY：贷款年金
+AMT_GOODS_PRICE：消费者获得贷款的商品价格
+NAME_TYPE_SUITE：申请贷款时的陪同客户（Children/Family/Unaccompanied/other_A/other_B/Spouse,partner/...）
+NAME_INCOME_TYPE：客户的收入类型（Working/State servant/Commercial associate/...）
+NAME_EDUCATION_TYPE：客户获得的最高学历
+NAME_FAMILY_STATUS：客户的家庭状况（单身/已婚/......）
+NAME_HOUSING_TYPE：客户的住房状况（出租，与父母同住……）
+REGION_POPULATION_RELATIVE：客户居住地区的标准化人口（数字越大，客户居住在人口稠密的地区）
+DAYS_BIRTH：客户在申请之日的年龄（申请贷款前活了多少天，且是负数）
+DAYS_EMPLOYED：此人在申请前几天开始工作（负数，表示已经工作的天数）
+DAYS_REGISTRATION：客户在申请前几天更改了他的注册（天数）
+DAYS_ID_PUBLISH：客户在申请前几天更改其申请贷款的身份证明文件（天数）
+OWN_CAR_AGE：客户的车龄
+FLAG_MOBIL：客户端是否提供了手机（1 =是，0 =否）
+FLAG_EMP_PHONE：客户端是否提供工作电话（1 =是，0 =否）
+FLAG_WORK_PHONE：客户端是否提供家庭电话（1 =是，0 =否）
+FLAG_CONT_MOBILE：手机是否可以接通（1 =是，0 =否）
+FLAG_PHONE：客户端是否提供家庭电话（1 =是，0 =否）
+FLAG_EMAIL：客户端是否提供电子邮件（1 =是，0 =否）
+OCCUPATION_TYPE：职业类型
+CNT_FAM_MEMBERS：客户有多少家庭成员
+REGION_RATING_CLIENT：我们对客户居住地区的评分（1,2,3）
+REGION_RATING_CLIENT_W_CITY：我们在考虑城市因素的情况下对客户居住地区的评分（1,2,3）
+WEEKDAY_APPR_PROCESS_START：客户在一周的哪一天申请贷款
+HOUR_APPR_PROCESS_START：客户大约在什么时间申请贷款
+REG_REGION_NOT_LIVE_REGION：如果客户的永久地址与联系人地址不匹配，则进行标记（1 =不同，0 =相同，在区域级别）
+REG_REGION_NOT_WORK_REGION：如果客户端的永久地址与工作地址不匹配，则为标志（在区域级别，1 =不同，0 =相同）
+LIVE_REGION_NOT_WORK_REGION：标记客户的联系地址是否与工作地址不匹配（区域级别为1 =不同，0 =相同）
+REG_CITY_NOT_LIVE_CITY：如果客户的永久地址与联系地址不匹配，则为标志（1 =不同，0 =相同，在城市级别）
+REG_CITY_NOT_WORK_CITY：如果客户的永久地址与工作地址不匹配，则进行标记（1 =不同，0 =相同，在城市级别）
+LIVE_CITY_NOT_WORK_CITY：如果客户的联系地址与工作地址不匹配，则进行标记（1 =不同，0 =相同，在城市级别）
+ORGANIZATION_TYPE：客户工作的组织类型
+EXT_SOURCE_1来自外部数据源的归一化分数
+EXT_SOURCE_2来自外部数据源的归一化分数
+EXT_SOURCE_3来自外部数据源的归一化分数
+APARTMENTS_AVG有关以下方面的标准化信息：客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住区域，建筑物的年龄，电梯数量，入口数量，建筑状态，层数
+BASEMENTAREA_AVG有关客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住面积，建筑物的年龄，建筑物的数量，电梯数量，入口数量，建筑状态，层数
+YEARS_BEGINEXPLUATATION_AVG有关客户居住建筑物的规范化信息，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住面积，建筑物的年龄，电梯的数量，入口的数量，建筑状态，层数
+YEARS_BUILD_AVG有关以下方面的标准化信息：客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住面积，建筑物的年龄，电梯数量，入口数量，建筑状态，层数
+COMMONAREA_AVG有关以下方面的标准化信息：客户端居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住区域，建筑物的年龄，电梯数量，入口数量，建筑状态，层数
+ELEVATORS_AVG有关以下方面的标准化信息：客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住区域，建筑物的年龄，电梯数量，入口数量，建筑状态，层数
+ENTRANCES_AVG有关以下方面的标准化信息：客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住区域，建筑物的年龄，电梯的数量，入口的数量，建筑状态，层数
+FLOORSMAX_AVG有关以下方面的标准化信息：客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住面积，建筑物的年龄，电梯数量，入口数量，建筑状态，层数
+FLOORSMIN_AVG有关以下方面的标准化信息：客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住区域，建筑物的年龄，电梯数量，入口数量，建筑状态，层数
+LANDAREA_AVG有关以下方面的规范化信息：客户端居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公用区域，居住面积，建筑物的使用期限，电梯数量，入口数量，建筑状态，层数
+LIVINGAPARTMENTS_AVG有关以下方面的标准化信息：客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住区域，建筑物的年龄，电梯数量，入口数量，建筑状态，层数
+LIVINGAREA_AVG有关以下方面的标准化信息：客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住面积，建筑物的年龄，电梯数量，入口数量，建筑状态，层数
+NONLIVINGAPARTMENTS_AVG有关客户居住建筑物的规范化信息，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住面积，建筑物的年龄，电梯数量，入口数量，建筑状态，层数
+NONLIVINGAREA_AVG有关客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公用区域，居住面积，建筑物的年龄，建筑物的数量，电梯数量，入口数量，建筑状态，层数
+APARTMENTS_MODE有关客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住面积，建筑物的年龄，电梯数量，电梯数量，入口数量，建筑状态，层数
+BASEMENTAREA_MODE有关客户端居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公用区域，居住面积，建筑物的年龄，建筑物的数量，电梯数量，入口数量，建筑状态，层数
+YEARS_BEGINEXPLUATATION_MODE有关客户端居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公用区域，居住区，建筑物的年龄，建筑物的数量，电梯的数量，入口数量，建筑物的状态，编号
+YEARS_BUILD_MODE有关客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公用区域，居住面积，建筑物的年龄，建筑物的数量，电梯数量，入口数量，建筑状态，层数
+COMMONAREA_MODE有关客户端居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公用区域，居住面积，建筑物的年龄，电梯数量，电梯数量，入口数量，建筑状态，层数
+ELEVATORS_MODE有关客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公用区域，居住面积，建筑物的年龄，电梯数量，电梯数量，入口数量，建筑状态，层数
+ENTRANCES_MODE有关客户端居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住面积，建筑物的年龄，电梯数量，电梯数量，入口数量，建筑状态，层数
+FLOORSMAX_MODE有关客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公用区域，居住面积，建筑物的年龄，电梯数量，电梯数量，入口数量，建筑状态，层数
+FLOORSMIN_MODE有关客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住面积，建筑物的年龄，电梯数量，电梯数量，入口数量，建筑状态，层数
+LANDAREA_MODE有关客户端居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住面积，建筑物的年龄，电梯的数量，电梯数量，入口数量，建筑状态，层数
+LIVINGAPARTMENTS_MODE有关客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住面积，建筑物的年龄，建筑物的数量，电梯数量，入口数量，建筑状态，层数
+LIVINGAREA_MODE有关客户端居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公用区域，居住面积，建筑物的年龄，电梯数量，电梯数量，入口数量，建筑状态，层数
+NONLIVINGAPARTMENTS_MODE有关客户端居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住区域，建筑物的年龄，建筑物的数量，电梯的数量，入口数量，建筑状态，层数
+NONLIVINGAREA_MODE有关客户端居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住区域，建筑物的年龄，建筑物的数量，电梯数量，入口数量，建筑状态，层数
+APARTMENTS_MEDI有关客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公用区域，居住面积，建筑物的年龄，建筑物的数量，电梯数量，入口数量，建筑状态，层数
+BASEMENTAREA_MEDI有关客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住面积，建筑物的年龄，建筑物的数量，电梯数量，入口数量，建筑状态，层数
+YEARS_BEGINEXPLUATATION_MEDI有关客户端居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公用区域，居住面积，建筑物的年龄，电梯的数量，电梯的数量，入口数量，建筑状态，层数
+YEARS_BUILD_MEDI有关以下方面的标准化信息：客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住区域，建筑物的年龄，电梯数量，入口数量，建筑状态，层数
+COMMONAREA_MEDI有关以下方面的规范化信息：客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住区域，建筑物的年龄，电梯数量，入口数量，建筑状态，层数
+ELEVATORS_MEDI有关以下方面的标准化信息：客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住区域，建筑物的年龄，电梯数量，入口数量，建筑状态，层数
+ENTRANCES_MEDI有关以下方面的标准化信息：客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住面积，建筑物的年龄，电梯数量，入口数量，建筑状态，层数
+FLOORSMAX_MEDI有关客户端居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公用区域，居住区域，建筑物的年龄，电梯数量，电梯数量，入口数量，建筑状态，层数
+FLOORSMIN_MEDI有关客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住面积，建筑物的年龄，电梯数量，电梯数量，入口数量，建筑状态，层数
+LANDAREA_MEDI有关以下方面的规范化信息：客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住面积，建筑物的年龄，电梯数量，入口数量，建筑状态，层数
+LIVINGAPARTMENTS_MEDI有关客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住面积，建筑物的年龄，建筑物的数量，电梯数量，入口数量，建筑状态，层数
+LIVINGAREA_MEDI有关以下方面的标准化信息：客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住面积，建筑物的年龄，电梯数量，入口数量，建筑状态，层数
+NONLIVINGAPARTMENTS_MEDI有关以下方面的规范化信息：客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住面积，建筑物的年龄，电梯的数量，入口的数量，建筑状态，层数
+NONLIVINGAREA_MEDI有关客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公共区域，居住面积，建筑物的年龄，建筑物的数量，电梯数量，入口数量，建筑状态，层数
+FONDKAPREMONT_MODE有关客户端居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公用区域，居住面积，建筑物的年龄，建筑物的数量，电梯数量，入口数量，建筑状态，层数
+HOUSETYPE_MODE有关客户居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公用区域，居住面积，建筑物的年龄，电梯的数量，电梯数量，入口数量，建筑状态，层数
+TOTALAREA_MODE有关客户端居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公用区域，居住面积，建筑物的年龄，电梯数量，电梯数量，入口数量，建筑状态，层数
+WALLSMATERIAL_MODE有关客户端居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公用区域，居住面积，建筑物的年龄，建筑物的数量，电梯数量，入口数量，建筑状态，层数
+EMERGENCYSTATE_MODE有关客户端居住的建筑物，平均数（_AVG后缀），方式（_MODE后缀），中位数（_MEDI后缀）公寓大小，公用区域，居住区域，建筑物的年龄，建筑物的数量，电梯数量，入口数量，建筑状态，层数
+OBS_30_CNT_SOCIAL_CIRCLE默认情况下可观察到30 DPD（到期天数）的客户的社交环境观察次数
+DEF_30_CNT_SOCIAL_CIRCLE在30 DPD（逾期天数）下默认多少次观察客户的社交环境
+OBS_60_CNT_SOCIAL_CIRCLE默认可观察的60 DPD（逾期天数）时观察到的客户社交环境的观察次数
+DEF_60_CNT_SOCIAL_CIRCLE在60天（到期日）之前，有多少次观察客户的社交环境违约
+DAYS_LAST_PHONE_CHANGE客户在申请前几天更改电话
+FLAG_DOCUMENT_2客户是否提供了文件2
+FLAG_DOCUMENT_3客户是否提供了文件3
+FLAG_DOCUMENT_4客户是否提供了文件4
+FLAG_DOCUMENT_5客户是否提供了文件5
+FLAG_DOCUMENT_6客户是否提供了文件6
+FLAG_DOCUMENT_7客户是否提供了文件7
+FLAG_DOCUMENT_8客户是否提供了文件8
+FLAG_DOCUMENT_9客户是否提供了文件9
+FLAG_DOCUMENT_10客户是否提供了文件10
+FLAG_DOCUMENT_11客户是否提供了文件11
+FLAG_DOCUMENT_12客户是否提供了文件12
+FLAG_DOCUMENT_13客户是否提供了文件13
+FLAG_DOCUMENT_14客户是否提供了文件14
+FLAG_DOCUMENT_15客户是否提供了文件15
+FLAG_DOCUMENT_16客户是否提供了文件16
+FLAG_DOCUMENT_17客户是否提供了文件17
+FLAG_DOCUMENT_18客户是否提供了文件18
+FLAG_DOCUMENT_19客户是否提供了文件19
+FLAG_DOCUMENT_20客户是否提供了文件20
+FLAG_DOCUMENT_21客户是否提供了文件21
+AMT_REQ_CREDIT_BUREAU_HOUR在申请前一小时向信贷局询问有关客户的数量
+AMT_REQ_CREDIT_BUREAU_DAY申请前一天（不包括申请前一小时）向信贷局查询的有关客户的数量
+AMT_REQ_CREDIT_BUREAU_WEEK在申请前1周（不包括在申请前1天）向信贷局查询的有关客户的数量
+AMT_REQ_CREDIT_BUREAU_MON申请前一个月（不包括申请前一周）向信贷局查询的有关客户的数量
+AMT_REQ_CREDIT_BUREAU_QRT申请前3个月（不包括申请前1个月）向信贷局查询的有关客户的数量
+AMT_REQ_CREDIT_BUREAU_YEAR一年之内向信贷局查询的客户数量（不包括申请前的最后三个月）
+
